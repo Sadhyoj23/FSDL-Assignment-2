@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Typing Effect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .typing-text {
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+    <!-- Include Typed.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+    <h1>I'm a <span class="typing-text"></span></h1>
+
+    <script>
+        var options = {
+            strings: ["Software Engineer", "Designer", "Freelancer", "Content Creator", "Developer"],
+            typeSpeed: 100,  // Typing speed in milliseconds
+            backSpeed: 50,   // Speed of backspacing
+            backDelay: 1000, // Delay before starting to delete
+            startDelay: 500, // Delay before typing starts
+            loop: true       // Looping effect
+        };
+
+        var typed = new Typed(".typing-text", options);
+    </script>
+
+</body>
+</html>
